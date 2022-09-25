@@ -1,0 +1,121 @@
+body {
+   background-color: #FFC810;
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   margin: 0;
+   padding: 0;
+}
+
+.header {
+   margin: 0;
+   padding: 0;
+   background-color: #6d570c;
+   color: white;
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   box-shadow: 0 1px 3px #4b3c09;
+}
+
+.icon {
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+}
+
+.icon-desc {
+   max-width: 182px;
+   cursor: default;
+}
+
+.navigation-list {
+   height: 75px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px 10px;
+   align-items: center;
+   justify-content: center;
+   list-style-type: none;
+   margin-left: 10px;
+   padding: 0;
+}
+
+.navigation-link {
+   padding: 10px;
+   text-decoration: none;
+   transition: color 0.15s ease-in;
+}
+
+.navigation-link:link,
+.navigation-link:visited,
+.navigation-link:active {
+   color: rgba(255, 255, 255, 0.953);
+}
+
+.navigation-link:hover {
+   color: #FFC810;
+   ;
+}
+
+.copyright-list {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 8px 0;
+   list-style-type: none;
+}
+
+.email-image {
+   margin-right: 5px;
+}
+
+.phone-image {
+   vertical-align: bottom;
+   margin-right: 5px;
+}
+
+.main {
+   width: 70%;
+   margin: 0 auto;
+   padding: 0;
+   display: grid;
+   grid-template-columns: repeat(2, minmax(100px, 467px));
+}
+
+.title {
+   font-size: 34px;
+   margin-top: 70px;
+   width: 592px;
+   min-width: 100px;
+}
+
+.text {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 22px;
+   margin-top: 30px;
+}
+
+.button {
+   font-size: 18px;
+   border: none;
+   color: white;
+   background-color: #6d570c;
+   padding: 20px 70px;
+   border-radius: 40px;
+   margin-top: 60px;
+   transition: background-color 0.15s ease-in;
+   box-shadow: 2px 2px 5px #4b3c09;
+}
+
+.button:hover {
+   background-color: #4b3c09;
+}
+
+.main-image {
+   background:
+      url(image/backbag.png) 0 80px,
+      url(image/Ellipse.svg) 100px 95px;
+   background-repeat: no-repeat;
+   width: 700px;
+   height: 600px;
+   z-index: -2;
+}
