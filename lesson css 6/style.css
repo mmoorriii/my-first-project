@@ -152,9 +152,10 @@ body {
    margin: 0 0 60px;
 }
 
-.button-link span {
-   padding: 0px 22px 0px 0px;
-   background: url(image/Shape-2.svg) right top/15px auto no-repeat;
+.button-link span::after {
+   padding: 0px 25px 0px 0px;
+   content: '';
+   background: url(image/Shape-2.svg) center/15px no-repeat;
 }
 
 .button-link:hover {
