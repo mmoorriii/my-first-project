@@ -107,9 +107,10 @@ body {
    line-height: 1.8;
 }
 
-.first-list-item li,
-.second-list-item li {
-   background: url(image/check-icon.svg) left center/20px no-repeat;
+.first-list-item li::before,
+.second-list-item li::before {
+   background: url(image/check-icon.svg) center/20px no-repeat;
+   content: '';
    padding: 0 0 0 28px;
    cursor: default;
 }
@@ -130,9 +131,13 @@ body {
    text-transform: uppercase;
 }
 
-.second-list-item li:nth-child(2):hover {
+.second-list-item li:nth-child(2)::before {
+   content: '';
+   background: url(image/check-icon-red.svg) center/20px no-repeat;
+}
+
+.second-list-item li:nth-child(2) {
    color: red;
-   background: url(image/check-icon-red.svg) left center/20px no-repeat;
 }
 
 .button-link {
@@ -169,4 +174,28 @@ body {
 .input-text:focus {
    border: 1px solid aqua;
    box-shadow: 0 0 10px aqua;
+}
+
+form {
+   margin: 0 0 60px 0;
+}
+
+.text {
+   width: 760px;
+   height: 280px;
+   text-align: justify;
+}
+
+.text p {
+   margin: 0 0 30px 0;
+   line-height: 1.5;
+}
+
+.text p:first-child::first-line {
+   color: red;
+}
+
+.text p:last-child::first-letter {
+   color: red;
+   font-size: 18px;
 }
